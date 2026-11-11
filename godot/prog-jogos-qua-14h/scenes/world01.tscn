@@ -2,9 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://c1ao4h4gke0dl" path="res://scenes/player.tscn" id="1_0x1uh"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8imwq"]
+size = Vector2(288, 274)
+
 [node name="world01" type="Node2D" unique_id=1353103668]
 
 [node name="arena_visual" type="Polygon2D" parent="." unique_id=66221875]
+position = Vector2(-18, -33)
 color = Color(0.105882, 0.129412, 0.168627, 1)
 polygon = PackedVector2Array(0, 0, 2304, 0, 2304, 1296, 0, 1296)
 
@@ -65,6 +69,36 @@ offset_top = 1033.0
 offset_right = 2197.0
 offset_bottom = 1056.0
 text = "CASA 8"
+
+[node name="Polygon2D" type="Polygon2D" parent="casas" unique_id=70371899]
+position = Vector2(992, 552)
+color = Color(0.7987947, 0, 0.10740093, 1)
+polygon = PackedVector2Array(-162.4881, 53.18123, -22.426025, -84.28716, 115.04236, 53.18123, 41, 47.99373, 50.198853, 171, -102.83203, 175.08714, -102.83203, 50.58748)
+uv = PackedVector2Array(-162.4881, 53.18123, -22.426025, -84.28716, 115.04236, 53.18123, 41, 47.99373, 50.198853, 171, -102.83203, 175.08714, -102.83203, 50.58748)
+
+[node name="Polygon2D2" type="Polygon2D" parent="casas" unique_id=1780417857]
+position = Vector2(992, 552)
+color = Color(0.8016704, 0.45363855, 0.038006544, 1)
+polygon = PackedVector2Array(47.21396, 44.273834, -108, 46, -100, 175, 50, 173)
+uv = PackedVector2Array(47.21396, 44.273834, -92.90042, 42.663315, -92.90042, 152.17801, 45.603485, 158.62006)
+
+[node name="house" type="StaticBody2D" parent="casas/Polygon2D2" unique_id=1710440128]
+
+[node name="colision" type="CollisionShape2D" parent="casas/Polygon2D2/house" unique_id=2036633273]
+position = Vector2(-14, 41)
+shape = SubResource("RectangleShape2D_8imwq")
+
+[node name="Polygon2D3" type="Polygon2D" parent="casas" unique_id=576375037]
+position = Vector2(992, 552)
+color = Color(0.17890802, 0.084285505, 0.0014443557, 1)
+polygon = PackedVector2Array(0, 99, -54, 109, -56, 180, 9, 182)
+uv = PackedVector2Array(47.21396, 44.273834, -92.90042, 42.663315, -92.90042, 152.17801, 45.603485, 158.62006)
+
+[node name="Polygon2D4" type="Polygon2D" parent="casas" unique_id=130228749]
+position = Vector2(992, 552)
+color = Color(0.83614415, 0.5698612, 0, 1)
+polygon = PackedVector2Array(0, 141, -9, 136, -12, 144, -6, 149)
+uv = PackedVector2Array(47.21396, 44.273834, -92.90042, 42.663315, -92.90042, 152.17801, 45.603485, 158.62006)
 
 [node name="player" parent="." unique_id=640426988 instance=ExtResource("1_0x1uh")]
 position = Vector2(1400, 680)
