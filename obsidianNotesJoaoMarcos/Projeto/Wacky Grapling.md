@@ -45,3 +45,14 @@ auto explicativo
 chegar no final da fase
 ## cenario
 camaras de teste tipo portal
+# cores
+#2A2A2A
+graphite
+#D7263D
+classic crimson
+#D5D3D4
+dust gray
+#067BC2 
+bright teal blue 
+#919191
+grey olive
